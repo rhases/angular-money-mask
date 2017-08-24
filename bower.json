@@ -1,8 +1,9 @@
 {
-  "name": "angular-money-mask",
-  "homepage": "https://github.com/rwaltenberg/angular-money-mask",
+  "name": "ng-money-mask",
+  "homepage": "https://github.com/rhases/ng-money-mask",
   "authors": [
-    "Rodrigo Waltenberg <rwaltenberg@gmail.com>"
+    "Rodrigo Waltenberg <rwaltenberg@gmail.com>",
+    "Tales Porto <tales.porto@rhases.com.br>"
   ],
   "description": "Angular directive to mask inputs with currency values",
   "main": "rw-money-mask.js",

@@ -58,11 +58,15 @@
 
       element.on('keypress', function (e) {
         var key = e.which || e.keyCode;
-        
+
         if(key === 9) {
           return true;
         }
-        
+
+        if (key >= 96 && key <= 105) {
+            key -= 48; // Numpad keys
+        }
+
         var char = String.fromCharCode(key);
         e.preventDefault();
 
@@ -73,7 +77,7 @@
           return false;
         }
 
-        if(e.srcElement.selectionEnd != e.srcElement.selectionStart) {
+        if(e.currentTarget.selectionEnd != e.currentTarget.selectionStart) {
           ngModelCtrl.$setViewValue(parseInt(char) / 100);
         }
         else {
