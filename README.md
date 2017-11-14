@@ -7,11 +7,11 @@ An AngularJS (1.x) directive to mask inputs with currency values
 
 #### Download from npm or bower
 ```sh
-$ npm install angular-money-directive --save
+$ npm install ng-money-mask --save
 ```
 or
 ```sh
-$ bower install angular-money-directive --save
+$ bower install ng-money-mask --save
 ```
 
 #### Reference script file
@@ -23,6 +23,9 @@ $ bower install angular-money-directive --save
 #### Inject `rw.moneymask` module
 
 ```javascript
+const moneyMask = require('ng-money-mask');
+...
+
 angular.module('yourApp', ['rw.moneymask'])
 ```
 
